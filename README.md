@@ -30,6 +30,8 @@ Scroll down for the English version of README.
 
 参见[用户手册][manual]中相关章节的详细说明。  
 
+[manual]:https://github.com/caowenhan/hhuthesis/blob/master/hhuthesis.pdf
+
 ### 功能特色
 
 - 此模板用于生成符合河海大学学位论文排版要求和相应的国家规范、行业标准的学位论文；
@@ -104,6 +106,8 @@ Homepage of this project: [https://github.com/caowenhan/hhuthesis]
 ### Installation and Use
 
 Refer to the relevant section of the [User Manual][manual] for detailed instrucitons.
+
+[manual]: https://github.com/caowenhan/hhuthesis/blob/master/hhuthesis.pdf
 
 ### Features
 - `hhuthesis` can be used to produce dissertations in accordance with the typesetting requirements of Hohai University and corresponding national norms and industry standards.
