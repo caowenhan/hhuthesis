@@ -1,6 +1,12 @@
+[![GitHub downloads](https://img.shields.io/github/downloads/caowenhan/hhuthesis/total)](https://github.com/caowenhan/hhuthesis/releases)
+
+[![GitHub commits](https://img.shields.io/github/commits-since/tuna/thuthesis/latest)](https://github.com/caowenhan/hhuthesis/commits/master)
+
+[![GitHub release](https://img.shields.io/github/v/release/caowenhan/hhuthesis)](https://github.com/caowenhan/hhuthesis/releases/latest)
+
 # hhuthesis
 
-**Latest Version: `V0.0.4`**  
+**Latest Version: `V1.0.0`**  
 
 Scroll down for the English version of README.
 
