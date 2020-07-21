@@ -28,9 +28,12 @@ Scroll down for the English version of README.
 
 ### 下载
 
-[下载zip压缩包][zip]。
+[下载zip压缩包][zip]，Windows用户适用。
 
-[zip]: https://codeload.github.com/caowenhan/hhuthesis/zip/master
+[下载tar.gz压缩包][tar]，Linux和MacOS用户适用。
+
+[zip]: https://codeload.github.com/caowenhan/hhuthesis/zip/v1.0.0
+[tar]:https://codeload.github.com/caowenhan/hhuthesis/tar.gz/v1.0.0
 
 ### 安装使用
 
@@ -105,9 +108,11 @@ Homepage of this project: [https://github.com/caowenhan/hhuthesis]
 
 ### Download
 
-[Download ZIP][zip].
+[Download ZIP][zip], for Windows Users.
+[Download Tar][tar], for Linux and MacOS Users.
 
-[zip]: https://codeload.github.com/caowenhan/hhuthesis/zip/master
+[zip]: https://codeload.github.com/caowenhan/hhuthesis/zip/v1.0.0
+[tar]:https://codeload.github.com/caowenhan/hhuthesis/tar.gz/v1.0.0
 
 ### Installation and Use
 
