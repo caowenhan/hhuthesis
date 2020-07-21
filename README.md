@@ -1,6 +1,6 @@
 [![GitHub downloads](https://img.shields.io/github/downloads/caowenhan/hhuthesis/total)](https://github.com/caowenhan/hhuthesis/releases)
 
-[![GitHub commits](https://img.shields.io/github/commits-since/tuna/thuthesis/latest)](https://github.com/caowenhan/hhuthesis/commits/master)
+[![GitHub commits](https://img.shields.io/github/commits-since/caowenhan/hhuthesis/latest)](https://github.com/caowenhan/hhuthesis/commits/master)
 
 [![GitHub release](https://img.shields.io/github/v/release/caowenhan/hhuthesis)](https://github.com/caowenhan/hhuthesis/releases/latest)
 
