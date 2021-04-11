@@ -1,0 +1,75 @@
+%% This is file 'chapter2.tex'
+%% It is included by hhuthesis-example.tex for hhuthesis.
+%%
+%% Copyright(C) 2020-2021, Wenhan Cao
+%% College of Water Conservancy and Hydropower Engineering, Hohai University.
+%%
+%% Version:v2.0.0
+%% Last update: April 7th, 2021.
+%%
+%% Home Page of the Project: https://github.com/caowenhan/thesis
+%%
+%% This file may be distributed and / or modified under the conditions of the
+%% LaTeX Project Public License, either version 1.3c of this license or (at your
+%% option) any later version. The latest version of this license is in:
+%%
+%% http://www.latex-project.org/lppl.txt
+%%
+%% and version 1.3c or later is part of all distributions of LaTeX version
+%% 2008/05/04 or later.
+%%
+\chapter{河网水力特性三级联合解法及参数反问题}
+\label{chap:inverseproblem}
+\section{概述}
+河网的非恒定流计算通常采用三级联合解法，此方法可归结为一维圣维南方程组的求解问题，即对组成河网的每条河道采用有限差分的隐式格式离散圣维南方程组，得到线性差分方程组。……\par
+……
+\section{河道控制方程}
+描述明渠一维非恒定流的基本方程为一维Saint-Venant 方程组：
+\begin{equation}
+	\frac{\partial Q}{\partial x}+B_{W}\frac{\partial Z}{\partial t}=q
+\end{equation}
+\begin{equation}
+	\frac{\partial Q}{\partial t}+2u\frac{\partial Q}{\partial x}+(gA-Bu^{2})\frac{\partial Z}{\partial x}-u^{2}\frac{\partial A}{\partial x}+g\frac{n^{2} |u|Q}{R^{4/3}}=0
+\end{equation}
+\noindent 式中，$t$为时间坐标；$x$为空间坐标；……\par
+……\par
+……
+
+\section{边界条件}
+……\par
+……
+
+\section{方程的求解}
+……\par
+……
+
+\section{参数反问题}
+……\par
+……
+
+\section{算例分析}
+为了验证上述计算方法的可靠性，通常借用正问题的解来构造反问题。即先进行正问题计算，用其结果验证反问题的解。\par
+……\par
+……\par
+计算结果见表\ref{tab:parameter}。
+
+\begin{table}[H]\small	%\small用于控制表格内字体大小为5号字
+	\centering
+	\bicaption{参数理论值与最优解}{Theoretiacal value and optimal solution of the parameter} \label{tab:parameter}
+	\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}}cccc}
+		\toprule
+		\multicolumn{1}{l}{} & b1     & b2     & b3     \\\midrule
+		理论解                  & 22     & 18     & 16     \\
+		最优解1                 & 21.986 & 18.048 & 15.997 \\
+		最优解2                 & 21.997 & 18.011 & 15.999 \\ \bottomrule
+	\end{tabular*}%
+\end{table}
+
+
+……\par
+……
+\section{本章小结}
+本章采用平原河网三级联合解法水量模型模拟河网的水力要素，建立了平原河网
+水量模型，对位于长江下游的南通河网进行了模拟运算。\par
+……\par
+……
