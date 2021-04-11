@@ -10,8 +10,8 @@ assignees: ''
 ## 编译环境
 编译的系统： Windows 10 / Others
 TeX 发行版：TeX Live 2019 / Others
-模板版本：v1.0.0
-模板类型：doctor / academicmaster /professionalmaster/ bachelor
+模板版本：v2.0.0
+模板类型：doctor / academicmaster /professionalmaster/ nonfulltimemaster/bachelor
 
 ## 描述问题
 ……
@@ -21,7 +21,7 @@ TeX 发行版：TeX Live 2019 / Others
 
 复现上述问题的代码：
 ```TeX
-\documentclass[doctor,twoside]{hhuthesis}
+\documentclass[doctor]{hhuthesis}
 \begin{document}
 abc
 \end{document}
