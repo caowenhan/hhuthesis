@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% Copyright (C) 2020 by Wenhan Cao.
+% Copyright (C) 2020-2021 by Wenhan Cao.
 % College of Water Conservancy and Hydropower Engineering, Hohai University.
 % 
 % This file may be distributed and/or modified under the
@@ -17,7 +17,7 @@
 %
 % \iffalse
 %<*driver>
-\ProvidesFile{hhuthesis.dtx}[2020/07/19 1.0.0 Hohai University Thesis Template]
+\ProvidesFile{hhuthesis.dtx}[2021/04/07 v2.0.0 Hohai University Thesis Template]
 \documentclass{ltxdoc}
 \usepackage{dtx-style}
 
@@ -82,9 +82,9 @@
 % \begin{abstract}
 %    此项目针对学位论文中存在的图表格式、公式格式、书写格式
 %    不规范等问题，提供了一个简单易用的河海大学学位论文LaTeX模板，
-%    该模板严格遵循河海大学学术委员会对学位论文的排版格式要求以及
-%    相应的国家标准规范，可用于排版本科毕业论文、硕士学位论文和博士
-%    学位论文。
+%    该模板严格遵循河海大学研究生院对学位论文的排版格式要求以及
+%    相应的国家标准规范，可用于排版博士学位论文、硕士学位论文和（非）全日制专业硕士
+%    学位论文、本科毕业论文。
 % \end{abstract}
 %
 % \vskip 2cm
@@ -93,8 +93,8 @@
 % \noindent
 % \begin{enumerate}
 %    \item 本模板的发布遵守\href{https://www.latex-project.org/lppl.txt}{\LaTeX{} Project Public License (1.3c)}，使用前请认真阅读协议内容。
-%    \item 本模板为作者根据河海大学研究生院颁布的\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《河海大学博士(硕士)学位论文编写格式规定》}，国家颁布的\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《学位论文编写规则：GB/T 7713.1-2006》}、\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《信息与文献~参考文献著录规则：GB/T 7714-2015》}、\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《科技文献的章节编号方法：CY/T 35-2001》}编写而成，旨在供河海大学毕业生撰写学位论文使用。
-%    \item 河海大学研究生院只提供毕业论文编写格式规定，不提供官方版本，也不会授权第三方模板为官方模板，所以此模板仅为写作指南的参考实现，不保证格式审查老师不提意见。任何由于使用本模板而引起的论文格式审查问题均与本模板作者无关。
+%    \item 本模板为作者根据河海大学研究生院颁布的\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《河海大学博士(硕士)学位论文编写格式规定（2020年9月29日发布）》}，国家颁布的\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《学位论文编写规则：GB/T 7713.1-2006》}、\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《信息与文献~参考文献著录规则：GB/T 7714-2015》}、\href{https://github.com/caowenhan/hhuthesis/blob/master/Guidence}{《科技文献的章节编号方法：CY/T 35-2001》}编写而成，旨在供河海大学毕业生撰写学位论文使用。
+%    \item 河海大学研究生院只提供毕业论文编写格式规定和PDF示例，不提供官方版本，也不会授权第三方模板为官方模板，所以此模板仅为写作指南的参考实现，不保证格式审查老师不提意见。任何由于使用本模板而引起的论文格式审查问题均与本模板作者无关。
 %    \item 任何个人或组织以本模板为基础进行修改、扩展而生成的新专用模板，请严格遵守  \href{https://www.latex-project.org/lppl.txt}{\LaTeX{} Project Public License (1.3c)}协议。由于违犯协议而引起的任何纠纷争端均与本模板作者无关。
 % \end{enumerate}
 % \end{abstract}
@@ -105,7 +105,7 @@
 % \section{模板介绍}
 % \hhuthesis{} (\textbf{h}o\textbf{h}ai \textbf{u}niversity \LaTeX \textbf{Thesis} Template) 是为了帮助河海大学毕业生撰写毕业论文而编写的\LaTeX 论文模板。该模板提供了一个河海大学学位论文的\LaTeX 文档类，用于生成符合河海大学学位论文格式要求的学位论文。目前该模板可用于排版本科毕业论文、硕士学位论文和博士学位论文；对于本科毕业论文，由于作者未能找到河海大学对本科毕业论文的格式要求，因此目前采用和硕博士学位论文一样的格式排版。
 %
-% 本文档将尽量完整的介绍模板的使用方法，如有不清楚之处，或者想提出改进建议，可以在\href{https://github.com/caowenhan/hhuthesis/issues}{GitHub Issues}参与讨论或\href{https://github.com/caowenhan/hhuthesis/issues/new}{提问}。由于作者水平有限，现在的这个版本基本上满足了学位论文的撰写需求，但模板中难免存在不足之处，欢迎大家积极反馈意见，也非常欢迎对代码的贡献。
+% 本文档将尽量完整的介绍模板的使用方法，如有不清楚之处，或者想提出改进建议，可以在\href{https://github.com/caowenhan/hhuthesis/issues}{GitHub Issues}参与讨论或\href{https://github.com/caowenhan/hhuthesis/issues/new}{提问}。由于作者水平有限，现在的这个版本基本上满足了河海大学研究生院对研究生学位论文的撰写需求，但模板中难免存在不足之处，欢迎大家积极反馈意见，也非常欢迎对代码的贡献。
 %
 % \note[注意：]{模板的作用在于减少论文写作过程中格式调整的时间。前提是遵守模板的用法，否则即便使用了hhuthesis也难以保证输出的论文符合学校规范。}
 %
@@ -125,7 +125,7 @@
 % \section{遵循的要求和标准}
 % hhuthesis所遵循的河海大学研究生院的《河海大学博士（硕士）学位论文编写格式规定》要求如下：
 % \begin{itemize}
-%	\item \url{http://gs.hhu.edu.cn/2012/0608/c3576a46473/page.htm}
+%	\item \url{https://gs.hhu.edu.cn/2020/0929/c3576a213269/page.htm}
 % \end{itemize}
 % 
 % hhuthesis所遵循的中华人民共和国国家标准如下：
@@ -220,7 +220,6 @@
 %
 % 在撰写论文时，\textbf{不推荐}使用原有的 \file{hhuthesis-example.tex} 这一名称。
 % 建议将其复制一份，改为其他的名字（如 \file{thesis.tex} 或者 \file{main.tex}）。
-% 需要注意，如果使用了来自 \file{chapters} 目录中的 \file{tex} 文件一起发布。
 % 
 % \subsubsection{latexmk}
 % \texttt{latexmk} 命令支持全自动生成 \LaTeX{} 编写的文档，并且支持使用不同的工具链
@@ -262,7 +261,7 @@
 % 和 \file{hhuname.png}，但如果没有示例文档会较难下手，所以
 % 推荐从模板自带的示例文档入手，其中包括了论文写作用到的所有命令及其适用方法，只需用自己的内容进行
 % 相应替换就可以。对于不清楚的命令可以查阅本手册，下面的例子描述了模板中章节的组织形式，来自于示例
-% 文档，具体内容可以参考模板附带的 \file{hhuhtesis-example.tex} 和 \file{chapters/}。
+% 文档，以博士论文排版为例，具体内容可以参考模板附带的 \file{hhuhtesis-example.tex} 和 \file{chapters/}。
 %
 % \lstinputlisting[style=lstStyleLaTeX]{hhuthesis-example.tex}
 %
@@ -271,18 +270,11 @@
 % \subsubsection{学位}
 % \DescribeOption{degree}
 % 选择学位，可选：
-% \option{bachelor}，\option{professionalmaster}，\option{academicmaster}，\option{doctor}（默认），本节中的\emph{key-value}选项
+% \option{bachelor}，\option{professionalmaster}，\option{academicmaster}，\option{nonfulltimemaster}，\option{doctor}（默认），本节中的\emph{key-value}选项
 % 只能在文档类的选项中进行设置。
 % \begin{latex}
 %   % 博士论文
 %   \documentclass[doctor]{hhuthesis}
-% \end{latex}
-%
-% \subsubsection{单双页打印}
-% \DescribeOption{print-type}
-% 定义研究生论文的打印方式，可选：单面打印oneside，双面打印twoside（默认）。
-% \begin{latex}
-%    \documentclass[twoside,doctor]{hhuthesis}
 % \end{latex}
 %
 % \subsection{封面信息}
@@ -294,7 +286,7 @@
 % 命令\cs{classification}用于设置论文按照《中国图书资料分类法》的分类编号。此属性必须
 % 被设置。
 % \begin{latex}
-%    \classification{TV3}
+%    \classification{TV14}
 % \end{latex}
 %
 % \subsubsection{密级}
@@ -316,9 +308,9 @@
 %    \bottomrule
 % \end{longtable}
 %
-% 如果未设置\cs{securitylevel}，其默认值将被设置为“公开”。
+% 如果未设置\cs{securitylevel}，其默认值将被设置为“无”。
 % \begin{latex}
-%   \securitylevel{公开}
+%   \securitylevel{无}
 % \end{latex}
 %
 % \subsubsection{UDC}
@@ -338,7 +330,7 @@
 % \DescribeMacro{\studentnumber}
 % 命令\cs{studentnumber}用于设置学生学号。此属性必须被设置。
 % \begin{latex}
-%    \studentnumber{13040202000X}
+%    \studentnumber{1209800072}
 % \end{latex}  
 %
 % \subsubsection{论文标题}
@@ -347,58 +339,61 @@
 % \DescribeMacro{\title}
 % 命令\cs{title}用于设置国家图书馆封面的论文标题。题名是以最恰当、最简明的词语反映论文中
 % 最重要的特定内容的逻辑组合，所用每一词语必须考虑到有助于选定关键词和编写题录、索引等二次
-% 文献可以提供检索的特定使用信息。论文标题字数尽量不超过20个字。
+% 文献可以提供检索的特定使用信息。论文标题字数尽量不超过20个字。此属性必须被设置。
 % \begin{latex}
-%    \title{寒冷地区渗水病害影响下混凝土坝\\服役性态多尺度分析方法}
+%    \title{河网地区水力水质特性的\\组合单元解法及反问题的研究}
 % \end{latex}
 %
 % \DescribeMacro{\englishtitle}
-% 命令\cs{englishtitle}用于设置英文信息封面的论文标题。英文标题一般不宜超过10个实词。
+% 命令\cs{englishtitle}用于设置英文信息封面的论文标题。英文标题一般不宜超过10个实词。此属性必须被设置。
 % \begin{latex}
-%    \englishtitle{Multiscale analysis of concrete dam service ability under the influence of water-seepage diseases in cold region}
+%    \englishtitle{Combined Cells Model of Hydraulics and Water Quality of River Networks and Its Reverse Problem }
+% \end{latex}
+%
+% \DescribeMacro{\vtitle}
+% 命令\cs{vtitle}用于设置书脊页的论文标题。
+% \begin{latex}
+%    \vtitle{河网地区水力水质特性的组合单元解法及反问题的研究}
 % \end{latex}
 % 
 % \DescribeMacro{\zhtitle}
 % \DescribeMacro{\zhsubtitle}
 % 命令\cs{zhtitle}、\cs{zhtitle}分别用于设置中文信息封面的论文中文标题和副标题。此属性必须被设置。
 % \begin{latex}
-%    \zhtitle{寒冷地区渗水病害影响下混凝土坝服役性态多尺度分析方法}
+%    \zhtitle{河网地区水力水质特性的组合单元解法及反问题的研究}
 %    \zhsubtitle{无}
 % \end{latex}  
 %
-% \DescribeMacro{\entitlea}
-% \DescribeMacro{\entitleb}
+% \DescribeMacro{\entitle}
 % \DescribeMacro{\ensubtitle}
-% 命令\cs{entitlea}、\cs{entitleb}、\cs{ensubtitle}分别用于设置中文信息封面的论文英文标题和副标题，
-% 其中\cs{entitleb}可选，主要在论文英文标题过长时使用。此属性必须被设置。
+% 命令\cs{entitle}、\cs{ensubtitle}分别用于设置中文信息封面的论文英文标题和副标题。
+% 此属性必须被设置。
 % \begin{latex}
-%    \entitlea{Multiscale analysis of concrete dam service ability under}
-%    % 英文标题过长时可选用
-%    \entitleb{the influence of water-seepage diseases in cold region}
+%    \entitle{\hfill Combined Cells Model of Hydraulics and Water Quality of \\River Networks and Its Reverse Problem}
 %    \ensubtitle{None}
 % \end{latex}  
 %
-% \note[注意：]{\cs{entitlea}、\cs{entitleb}命令的参数中都不能再出现换行。}
+% \note[注意：]{如果英文标题过长，可使用换行符并辅以\cs{hfill}命令调整每行英文标题字数。}
 %
 % \subsubsection{论文关键词}
 % \DescribeMacro{\thesiskeywords}
 % 命令\cs{thesiskeywords}用于设置中文信息封面的论文关键词，属性用中文顿号隔开。此属性必须被设置。
 %
 % \begin{latex}
-%   \thesiskeywords{寒冷地区、混凝土坝、服役性态、渗水病害、多尺度分析}
+%   \thesiskeywords{河网、力特征、水质特性、污染面、联合解法}
 % \end{latex}
 %
 % \subsubsection{作者姓名}
 % \DescribeMacro{\author}
 % 命令\cs{author}用于设置国家图书馆封面和中文信息封面作者中文姓名，此属性必须被设置。
 % \begin{latex}
-%    \author{张三}
+%    \author{韩中国}
 % \end{latex}  
 %
 % \DescribeMacro{\englishauthor}
 % 命令\cs{englishauthor}用于设置英文信息封面作者英文姓名。此属性必须被设置。
 % \begin{latex}
-%    \englishauthor{Zhang San}
+%    \englishauthor{Han Zhongguo}
 % \end{latex}  
 %
 % \subsubsection{作者单位}
@@ -417,7 +412,7 @@
 % \DescribeMacro{\englishdepartment}
 % 命令\cs{englishdepartment}用于设置英文信息封面作者二级单位英文名称，此属性必须被设置。
 % \begin{latex}
-%    \englishdepartment{College's name}
+%    \englishdepartment{College of Water Conservancy and Hydropower Engineering}
 % \end{latex}  
 % 
 % \subsubsection{指导老师}
@@ -425,13 +420,13 @@
 % \DescribeMacro{\tutorinfob}
 % 命令\cs{tutorinfoa}和\cs{tutorinfob}用于设置国家图书馆封面的
 % 论文指导教师信息。其中，对于学术型研究生 \cs{tutorinfoa}命令用于设置
-% 指导教师的姓名和职称，\cs{tutorinfob}命令用于设置指导教师的单位和地址。
-% 对于专业型研究生 \cs{tutorinfoa}命令用于设置学校指导老师
-% 姓名职称单位，\cs{tutorinfob}命令用于设置基地指导教师姓名职称和单位。
+% 指导教师的姓名和职称，\cs{tutorinfob}命令用于设置指导教师的单位。
+% 对于专业型研究生 \cs{tutorinfoa}命令用于设置学校指导教师
+% 姓名、职称和单位，\cs{tutorinfob}命令用于设置基地指导教师姓名、职称和单位。
 % \begin{latex}
 %    %学术型研究生
 %    \tutorinfoa{<导师姓名&职务&职称>}
-%    \tutorinfob{<导师单位&地址>}
+%    \tutorinfob{<导师单位>}
 %    %专业型研究生
 %    \tutorinfoa{<学校导师姓名&职称&单位>}
 %    \tutorinfob{<基地导师姓名&职称&单位>}    
@@ -439,18 +434,18 @@
 %
 % \DescribeMacro{\tutor}
 % \DescribeMacro{\tutorinstitute}
-% 命令\cs{tutor}和\cs{tutorinstitute}分别用于设置中文信息封面的指导老师姓名和单位，该属性只适用于学术型研究生用户。
+% 命令\cs{tutor}和\cs{tutorinstitute}分别用于设置中文信息封面的指导教师姓名和单位，该属性只适用于学术型研究生用户。
 % \begin{latex}
-%    \tutor{<导师姓名>}
-%    \tutorinstitute{<导师单位>}
+%    \tutor{张长江~教授}
+%    \tutorinstitute{河海大学水利水电学院}
 % \end{latex} 
 %
 % \DescribeMacro{\tutora}
 % \DescribeMacro{\tutorb}
 % \DescribeMacro{\tutorainstitute}
 % \DescribeMacro{\tutorbinstitute}
-% 命令\cs{tutora}和\cs{tutorainstitute}分别用于设置中文信息封面的学校指导老师姓名和单位，该属性只适用于专业型研究
-% 生用户。命令\cs{tutorb}和\cs{tutorbinstitute}分别用于设置中文信息封面的基地指导老师姓名和单位，该属性同样只适用
+% 命令\cs{tutora}和\cs{tutorainstitute}分别用于设置中文信息封面的学校指导教师姓名和单位，该属性只适用于专业型研究
+% 生用户。命令\cs{tutorb}和\cs{tutorbinstitute}分别用于设置中文信息封面的基地指导教师姓名和单位，该属性同样只适用
 % 于专业型研究生用户。上述属性必须被设置。
 % \begin{latex}
 %    \tutora{<学校导师姓名>}
@@ -462,7 +457,7 @@
 % \DescribeMacro{\entutor}
 % 命令\cs{entutor}用于设置英文信息封面指导老师姓名。此属性必须被设置。
 % \begin{latex}
-%    \entutor{<tutor's name>}
+%    \entutor{~~Zhang Changjiang}
 % \end{latex}
 % 
 % \subsubsection{申请学位}
@@ -510,34 +505,46 @@
 % \end{itemize} 
 %
 % \begin{latex}
-%   \major{水工结构工程}    
+%   \major{水力学及河流动力学}    
 % \end{latex}
 %
 % \subsubsection{研究方向}
 % \DescribeMacro{\researchfield}
 % 命令\cs{researchfield}用于生成中文信息封面的作者研究方向名称，此属性必须被设置。
 % \begin{latex}
-%   \researchfield{结构安全监测}    
+%   \researchfield{工程水力学及环境水力学}    
 % \end{latex}
 %
 % \subsubsection{学位授予单位与日期}
 % \DescribeMacro{\awarded}
 % 命令\cs{awarded}用于设置学位授予单位和日期。此属性必须被设置。
 % \begin{latex}
-%   \awarded{河海大学~~~~2018年9月26日}    
+%   \awarded{河~海~大~学\hspace{3em}2016年12月30日}    
 % \end{latex}
 %
 % \subsubsection{论文答辩主席与委员}
 % \DescribeMacro{\chairman}
 % 命令\cs{chairman}用于设置论文答辩委员会的姓名和职称。此属性必须被设置。
 % \begin{latex}
-%   \chairman{主席A}    
+%   \chairman{王继承}    
 % \end{latex}
 % 
-% \DescribeMacro{\reviewer}
-% 命令\cs{reviewer}用于设置论文答辩委员会成员的姓名，中间用中文顿号隔开。此属性必须被设置。
+% \DescribeMacro{\reviewera}
+% \DescribeMacro{\reviewerb}
+% \DescribeMacro{\reviewerc}
+% \DescribeMacro{\reviewerd}
+% \DescribeMacro{\reviewere}
+% \DescribeMacro{\reviewerf}
+% \DescribeMacro{\reviewerg}
+% 命令\cs{reviewera}、\cs{reviewerb}、\cs{reviewerc}、\cs{reviewerd}、\cs{reviewere}、\cs{reviewerf}、\cs{reviewerg}均用于设置论文答辩委员会成员的姓名，博士答辩委员会成员为7人，硕士答辩委员会成员为5人，命令\cs{reviewerf}、\cs{reviewerg}可以不填，会自动屏蔽。此属性必须被设置。
 % \begin{latex}
-%   \reviewer{专家A、专家B、专家C、专家D、专家E、专家F}    
+%   \reviewera{王继承}    
+%   \reviewerb{李生柱}
+%   \reviewerc{徐鹏飞}
+%   \reviewerd{陈\hspace{1em}诚}
+%   \reviewere{吴树人}
+%   \reviewerf{姜大文}
+%   \reviewerg{蒋小为}
 % \end{latex}
 % 
 % \subsubsection{论文日期与地点}
@@ -546,31 +553,31 @@
 % \DescribeMacro{\submitdate}
 % 命令\cs{submitdate}用于设置国家图书馆封面的论文提交日期。此属性必须被设置。
 % \begin{latex}
-%   \submitdate{2018年7月}    
+%   \submitdate{2016年7月6日}    
 % \end{latex}
 %
 % \DescribeMacro{\defenddate}
 % 命令\cs{defenddate}用于设置国家图书馆封面和中文信息封面的论文答辩日期。此属性必须被设置。
 % \begin{latex}
-%   \defenddate{2018年9月7日}    
+%   \defenddate{2016年9月30日}    
 % \end{latex}
 %
 % \DescribeMacro{\nlcdate}
 % 命令\cs{nlcdate}用于设置国家图书馆封面的论文定稿日期。此属性必须被设置。
 % \begin{latex}
-%   \nlcdate{2018年9月}    
+%   \nlcdate{2016年12月}    
 % \end{latex}
 %
 % \DescribeMacro{\nlclocate}
 % 命令\cs{nlclocate}用于设置国家图书馆封面的论文定稿地点。此属性必须被设置。
 % \begin{latex}
-%   \nlclocate{中国~~南京}    
+%   \nlclocate{中~~国~~$\cdot$~~南~~京}    
 % \end{latex}
 %
 % \DescribeMacro{\englishdate}
 % 命令\cs{englishdate}用于设置英文信息封面的论文定稿日期。此属性必须被设置。
 % \begin{latex}
-%   \englishdate{September, 2018}    
+%   \englishdate{September, 2016}    
 % \end{latex}
 %
 % \DescribeMacro{\enlocate}
@@ -597,13 +604,13 @@
 % \DescribeMacro{\thesispages}
 % 命令\cs{thesispages}用于设置中文信息封面的论文页数信息。此属性必须被设置。
 % \begin{latex}
-%   \thesispages{145}    
+%   \thesispages{198}    
 % \end{latex}
 %
 % \DescribeMacro{\numofwords}
 % 命令\cs{numofwords}用于设置中文信息封面的论文字数信息。此属性必须被设置。
 % \begin{latex}
-%   \numofwords{8.5万}    
+%   \numofwords{11}    
 % \end{latex}
 %
 % \subsection{封面生成}
@@ -616,6 +623,15 @@
 % \begin{latex}
 %   % 制作国家图书馆封面
 %   \makenlctitle   
+% \end{latex}
+%
+% \subsubsection{中缝（书脊）}
+% \DescribeMacro{\makeverticaltitle}
+% 命令\cs{makeverticaltitle}用于生成论文书脊。此命令必须被用在\cs{begindocument}命令之后
+% 和\cs{frontmatter}命令之前。
+% \begin{latex}
+%   % 制作书脊
+%   \makeverticaltitle   
 % \end{latex}
 %
 % \subsubsection{中文信息封面}
@@ -855,24 +871,20 @@
 %   \end{acknowledgement}
 % \end{latex}
 % 
-% \subsubsection{简历附录}
+% \subsubsection{附录}
 % \DescribeEnv{resume}
-% 开启个人简历章节，包括个人简历、发表文章、参研项目、所获荣誉。每个子项目请
+% 开启附录章节，包括发表文章、参研项目、所获荣誉。每个子项目请
 % 用以下对应命令开启：\cs{xxxitem}\marg{subtitle}。
-%
-% \DescribeMacro{\resumeitem}
-% 个人简历，用法：\cs{resumeitem}\{个人简历\}。简历内容部分没有格式要求，正常段
-% 落排版。
 %
 % \DescribeMacro{\researchitem}
 % \DescribeEnv{publications}
-% 发表学术论文用 \cs{researchitem}\{攻读博士学位期间发表的主要成果\}开启，随后采用 \env{publications}环境罗列。
+% 发表学术论文用 \cs{researchitem}\{附录A.~~攻读博士学位期间发表的主要成果\}开启，随后采用 \env{publications}环境罗列。
 % 
 % \DescribeEnv{projects}
-% 研究成果用 \cs{researchitem}\{攻读博士学位期间参与的科研项目\} 开启，随后用 \env{projects} 环境罗列。
+% 研究成果用 \cs{researchitem}\{附录B.~~攻读博士学位期间参与的科研项目\} 开启，随后用 \env{projects} 环境罗列。
 %
 % \DescribeEnv{honours}
-% 研究成果用 \cs{researchitem}\{攻读博士学位期间所获荣誉\} 开启，随后用 \env{honours} 环境罗列。
+% 研究成果用 \cs{researchitem}\{附录C.~~攻读博士学位期间所获的荣誉与奖励\} 开启，随后用 \env{honours} 环境罗列。
 %
 % 具体用法请参看示例文档 \file{data/resume.tex}。
 %
@@ -890,7 +902,13 @@
 % \endhead
 % \endfoot
 % \endlastfoot
-% v1.0.0 & 2020/07/19 & 曹文翰 & 第一个可用版本\\\bottomrule
+% v1.0.0 & 2020/07/19 & 曹文翰 & 第一个可用版本\\
+% v2.0,0 & 2021/04/07 & 曹文翰 & 增加了论文中缝（书脊）页\newline
+%                                按照编写格式要求修改了论文国家图书馆封面、中文信息封面、英文信息封面和声明授权页\newline
+%                                修改了论文页眉，单页页眉改为“河海大学XX学位论文”，双页页眉改为“所在章节的一级标题名”，页眉下划线改为单线\newline
+%                                按照编写格式要求修改了论文章节标题的字体、字号、对齐方式、段前段后距离，\newline
+%                                修改了论文附录格式，去除了个人简历\newline
+%                                修复了参考文献格式，添加了文献标识符\\\bottomrule
 % \end{longtable}
 %
 % \section{实现细节}
@@ -898,7 +916,7 @@
 % \subsection{基本信息}
 %    \begin{macrocode}
 %<cls>\NeedsTeXFormat{LaTeX2e}[2008/05/04]
-%<cls>\ProvidesClass{hhuthesis}[2020/06/14 v0.0.4 hhuthesis document class]
+%<cls>\ProvidesClass{hhuthesis}[2021/04/07 v2.0.0 hhuthesis document class]
 %    \end{macrocode}
 % 
 % \subsection{定义选项}
@@ -912,12 +930,12 @@
 \newif\ifhhut@bachelor\hhut@bachelorfalse
 \newif\ifhhut@academicmaster\hhut@academicmasterfalse
 \newif\ifhhut@professionalmaster\hhut@professionalmasterfalse
+\newif\ifhhut@nonfulltimemaster\hhut@nonfulltimemasterfalse
 \newif\ifhhut@doctor\hhut@doctorfalse
-\newif\ifhhut@istwoside\hhut@istwosidefalse
-\DeclareOption{twoside}{\hhut@istwosidetrue}
 \DeclareOption{bachelor}{\hhut@bachelortrue}
 \DeclareOption{academicmaster}{\hhut@academicmastertrue}
 \DeclareOption{professionalmaster}{\hhut@professionalmastertrue}
+\DeclareOption{nonfulltimemaster}{\hhut@nonfulltimemastertrue}
 \DeclareOption{doctor}{\hhut@doctortrue}
 %    \end{macrocode}
 %
@@ -927,15 +945,11 @@
 %    \end{macrocode}
 %
 % \subsection{底层文档类}
-% 文档基于\LaTeX 的标准ctexbook类。正文统一使用小四字号，纸张使用A4，可选单双面打印，
+% 文档基于\LaTeX 的标准ctexbook类。正文统一使用小四字号，纸张使用A4，
 % 双面打印时章节首页右开，UTF8编码。
 %
 %    \begin{macrocode}
-\ifhhut@istwoside
 \LoadClass[zihao=-4,a4paper,twoside,openright,UTF8,space=auto]{ctexbook}
-\else
-\LoadClass[zihao=-4,a4paper,oneside,openany,UTF8,space=auto]{ctexbook}
-\fi
 %    \end{macrocode}
 %
 % \subsection{字符串常量定义}
@@ -947,7 +961,7 @@
 \def\hhut@label@preface{前言}
 \def\hhut@label@abstract{摘要}
 \def\hhut@label@keywords{关键词：~}
-\def\hhut@label@enabstract{Abstract}
+\def\hhut@label@enabstract{ABSTRACT}
 \def\hhut@label@enkeywords{Keywords:~}
 \def\hhut@label@acknowledgement{致谢}
 \def\hhut@label@resume{附录}
@@ -955,7 +969,7 @@
 %
 % 定义文档类的版本号字符串常量：
 %    \begin{macrocode}
-\def\hhut@value@templateversion{v1.0.0}
+\def\hhut@value@templateversion{v2.0.0}
 %    \end{macrocode}
 %
 % 定义版本号命令\cs{version}:
@@ -966,25 +980,31 @@
 % 定义国家图书馆封面的字符串常量：
 %    \begin{macrocode}
 \def\hhut@label@nlc{国家图书馆封面}
-\def\hhut@label@studentnumber{学号:}
-\def\hhut@label@classification{分类号:}
-\def\hhut@label@securitylevel{密级:}
-\def\hhut@label@udc{UDC:}
-\def\hhut@label@thesistitle@doctor{博\hspace{1em}士\hspace{1em}学\hspace{1em}位\hspace{1em}论\hspace{1em}文}
-\def\hhut@label@thesistitle@academic{硕\hspace{1em}士\hspace{1em}学\hspace{1em}位\hspace{1em}论\hspace{1em}文}
+\def\hhut@label@studentnumber{学号：}
+\def\hhut@label@classification{分类号：}
+\def\hhut@label@securitylevel{密级：}
+\def\hhut@label@udc{U~D~C：}
+\def\hhut@label@thesistitle@doctor{博士学位论文}
+\def\hhut@label@thesistitle@academic{硕士学位论文}
 \def\hhut@label@thesistitle@professional{全日制工程硕士专业学位论文}
-\def\hhut@label@thesistitle@bachelor{学\hspace{1em}士\hspace{1em}学\hspace{1em}位\hspace{1em}论\hspace{1em}文}
-\def\hhut@label@tutor{指导教师姓名:}
-\def\hhut@label@professional@tutora{学校指导老师:}
-\def\hhut@label@professional@tutorb{基地指导老师:}
-\def\hhut@label@degree{申请学位等级:}
-\def\hhut@label@major@academic{专业名称:}
-\def\hhut@label@major@professional{工程领域:}
-\def\hhut@label@submitdate{论文提交日期:}
-\def\hhut@label@defenddate{论文答辩日期:}
-\def\hhut@label@awarded{学位授予单位和日期:}
-\def\hhut@label@chairman{答辩委员会主席:}
-\def\hhut@label@reviewer{答辩委员会成员:}
+\def\hhut@label@thesistitle@nonfulltime{非全日制工程硕士专业学位论文}
+\def\hhut@label@thesistitle@bachelor{学士学位论文}
+\def\hhut@label@tutor{指导教师姓名：}
+\def\hhut@label@professional@tutora{学校指导教师：}
+\def\hhut@label@professional@tutorb{基地指导教师：}
+\def\hhut@label@degree{申请学位级别：}
+\def\hhut@label@major{专业名称：}
+\def\hhut@label@submitdate{论文提交日期：}
+\def\hhut@label@defenddate{论文答辩日期：}
+\def\hhut@label@awarded{学位授予单位和日期：}
+\def\hhut@label@chairman{答辩委员会主席：}
+\def\hhut@label@reviewer{答辩委员会成员：}
+\def\hhut@label@comma{、}
+%    \end{macrocode}
+%
+% 定义论文中缝（书脊）封面：
+%    \begin{macrocode}
+\def\hhut@label@spine{中缝（书脊）}
 %    \end{macrocode}
 %
 % 定义中文信息封面的字符串常量：
@@ -1004,15 +1024,16 @@
 \def\hhut@label@cover@abstractlang{论文摘要语种}
 \def\hhut@label@cover@thesispages{论文页数}
 \def\hhut@label@cover@numofwords{论文字数}
+\def\hhut@label@cover@unitofwords{(万)}
 \def\hhut@label@cover@thesiskeywords{论文关键词}
 \def\hhut@label@cover@degree{申请学位级别}
-\def\hhut@label@cover@major@academic{专业名称}
-\def\hhut@label@cover@major@professional{工程领域}
+\def\hhut@label@cover@major{专业名称}
 \def\hhut@label@cover@researchfield{研究方向}
 \def\hhut@label@cover@tutor{指导教师姓名}
-\def\hhut@label@cover@professional@tutora{学校指导老师}
-\def\hhut@label@cover@professional@tutorb{基地指导老师}
+\def\hhut@label@cover@professional@tutora{学校指导教师}
+\def\hhut@label@cover@professional@tutorb{基地指导教师}
 \def\hhut@label@cover@tutorinstitute{导师单位}
+\def\hhut@label@cover@professional@tutorinstitute{单位}
 \def\hhut@label@cover@defenddate{论文答辩日期}
 %    \end{macrocode}
 %
@@ -1021,13 +1042,13 @@
 \def\hhut@label@encover{英文信息封面}
 \def\hhut@label@enstatement{
     Dissertation Submitted to\\
-	{\rmfamily \zihao{-3} \textbf{\hhut@value@eninstitute}}\\
-	In Fulfillment of The Requirement\\
-	for the Degree of\\
-	{\rmfamily \zihao{-3} \textbf{\hhut@value@englishdegree}}\\
+	{\rmfamily \zihao{4} \textbf{\hhut@value@eninstitute}}\\
+	In Fulfillment of the Requirement\\
+	For the Degree of\\
+	{\rmfamily \zihao{4} \textbf{\hhut@value@englishdegree}}\\
 }
 \def\hhut@label@enby{By}
-\def\hhut@label@entutor{Supervisor:~~Prof.}
+\def\hhut@label@entutor{Dissertation Supervisor:~Professor}
 %    \end{macrocode}
 %
 % 定义论文原创性说明的字符串常量：
@@ -1041,8 +1062,8 @@
 本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。如
 不实，本人负全部责任。
 }
-\def\hhut@label@authorsign{论文作者（签名）:}
-\def\hhut@label@originaldate{签字日期:}
+\def\hhut@label@authorsign{论文作者(签名)：}
+\def\hhut@label@originaldate{年\hspace{3em}月\hspace{3em}日}
 \def\hhut@label@authorization{学位论文使用授权说明：}
 \def\hhut@label@authorizationcontent{
 河海大学、中国科学技术信息研究所、国家图书馆、中国学术期刊
@@ -1345,41 +1366,45 @@
 % 
 % 设置章节标题格式如下：
 %\begin{itemize}
-%	\item[零级节标题] 命令为\cs{chapter}，格式为三号黑体，加粗居中，段前间距为1行，段后间距为1行；
-%	\item[一级节标题] 命令为\cs{section}，格式为四号黑体，加粗左对齐，段前间距为1行，段后间距为0.5行；
-% 	\item[一级节标题] 命令为\cs{subsection}，格式为小四号黑体，加粗左对齐，段前间距为1行，段后间距为0.5行；
-%	\item[一级节标题] 命令为\cs{subsubsection}，格式为小四号黑体，加粗左对齐，段前间距为1行，段后间距为0.5行；
+%	\item[零级节标题] 命令为\cs{chapter}，格式为小二号黑体，居中，段前间距为7.5磅，段后间距为7.5磅；
+%	\item[一级节标题] 命令为\cs{section}，格式为三号黑体，左对齐，段前间距为6磅，段后间距为6磅；
+% 	\item[一级节标题] 命令为\cs{subsection}，格式为小三号黑体，左对齐，段前间距为6磅，段后间距为3磅；
+%	\item[一级节标题] 命令为\cs{subsubsection}，格式为四号仿宋，左对齐，段前间距为3磅，段后间距为0磅；
 % \end{itemize}
 %
 %    \begin{macrocode}
 \ctexset{chapter={
 		name = {第,章},
 		number = {\chinese{chapter}},
-		format = {\bfseries \rmfamily \centering \zihao{3}},
+		format = {\centering \rmfamily \heiti \zihao{-2}},
 		pagestyle = {hhut@headings},
-		beforeskip= {16bp},
-		afterskip = {32bp},
+        aftername = {\enspace},
+        beforeskip= {16pt},
+		afterskip = {16pt},
 		fixskip = true,
 	}
 }
 \ctexset{section={
-		format={\raggedright \bfseries \rmfamily \zihao{4}},
-		beforeskip = {10bp},
-		afterskip = {10bp},
+		format={\raggedright \rmfamily \heiti \zihao{3}},
+        aftername = {\enspace},
+		beforeskip = {16pt},
+		afterskip = {16pt},
 		fixskip = true,
 	}
 }
 \ctexset{subsection={
-		format={\raggedright \bfseries \rmfamily \zihao{-4}},
-		beforeskip = {10bp},
-		afterskip = {10bp},
+		format={\raggedright \rmfamily \heiti \zihao{-3}},
+        aftername = {\enspace},
+		beforeskip = {16pt},
+		afterskip = {12pt},
 		fixskip=true,
 	}
 }
 \ctexset{subsubsection={
-		format={\raggedright \bfseries \rmfamily \zihao{-4}},
-		beforeskip = {10bp},
-		afterskip = {10bp},
+		format={\raggedright \rmfamily \fangsong \zihao{4}},
+        aftername = {\enspace},
+		beforeskip = {12pt},
+		afterskip = {12pt},
 		fixskip=true,
 	}
 }
@@ -1400,16 +1425,16 @@
 %
 % 设置目录格式如下：
 %\begin{itemize}
-%	\item[零级节标题] 格式为四号黑体，段前段后间距为0行，无缩进，序号与名称之间间隔1字符；
+%	\item[零级节标题] 格式为小四号黑体，段前段后间距为0行，无缩进，序号与名称之间间隔1字符；
 %	\item[一级节标题] 格式为小四号宋体，段前段后间距为0行，缩进两字符，序号与名称之间间隔1字符；
 % \end{itemize}
 %    \begin{macrocode}
-\titlecontents{chapter}[0pt]{\heiti \zihao{4}}
-    {\thecontentslabel\hspace{\ccwd}}{}
+\titlecontents{chapter}[0pt]{\heiti \zihao{-4}}
+    {\thecontentslabel\hspace{0.5\ccwd}}{}
     {\hspace{.5em}\titlerule*{.}\contentspage}
-\titlecontents{section}[2\ccwd]{\songti \zihao{-4}}
-    {\thecontentslabel\hspace{\ccwd}}{}
-	{\hspace{.5em}\titlerule*{.}\contentspage}
+\titlecontents{section}[\ccwd]{\songti \zihao{-4}}
+    {\thecontentslabel\hspace{0.5\ccwd}}{}
+    {\hspace{.5em}\titlerule*{.}\contentspage}
 %    \end{macrocode}	
 %
 % 设置插图、附表索引格式如下：
@@ -1437,8 +1462,8 @@
 % \end{itemize}
 %
 % 按照河海大学学位论文页面要求设置页眉页脚。hhut@headings页脚奇偶页均居中显示页码，
-% 页眉奇偶页不同，偶数页页眉居中显示“河海大学XX学位论文”，XX可以是博士、硕士和学士，
-% 奇数页页眉是当前章的编号和标题，当不位于\cs{mainmatter}中，则上方只显示当前章的标题。
+% 页眉奇偶页不同，奇数页页眉居中显示“河海大学XX学位论文”，XX可以是博士、硕士和学士，
+% 偶数页页眉是当前章的编号和标题，当不位于\cs{mainmatter}中，则上方只显示当前章的标题。
 %    \begin{macrocode}
 \fancypagestyle{hhut@empty}{
     \fancyhf{}
@@ -1447,10 +1472,10 @@
 \fancypagestyle{hhut@headings}{
 	\fancyhf{}
 	\fancyfoot[C]{\songti \zihao{-5} \thepage}
-    \fancyhead[CE]{ \ifhhut@doctor \zihao{-5} {\songti 河海大学博士学位论文}
+    \fancyhead[CO]{ \ifhhut@doctor \zihao{-5} {\songti 河海大学博士学位论文}
                         \else \ifhhut@bachelor \zihao{-5} {\songti 河海大学学士学位论文}
                             \else \zihao{-5} {\songti 河海大学硕士学位论文}\fi\fi}
-    \fancyhead[CO]{ \songti \zihao{-5} \leftmark}
+    \fancyhead[CE]{ \songti \zihao{-5} \leftmark}
 }
 %    \end{macrocode}
 %
@@ -1675,14 +1700,20 @@
 \newcommand\defenddate[1]{\def\hhut@value@defenddate{#1}}
 \newcommand\awarded[1]{\def\hhut@value@awarded{#1}}
 \newcommand\chairman[1]{\def\hhut@value@chairman{#1}}
-\newcommand\reviewer[1]{\def\hhut@value@reviewer{#1}}
+\newcommand\reviewera[1]{\def\hhut@value@reviewera{#1}}
+\newcommand\reviewerb[1]{\def\hhut@value@reviewerb{#1}}
+\newcommand\reviewerc[1]{\def\hhut@value@reviewerc{#1}}
+\newcommand\reviewerd[1]{\def\hhut@value@reviewerd{#1}}
+\newcommand\reviewere[1]{\def\hhut@value@reviewere{#1}}
+\newcommand\reviewerf[1]{\def\hhut@value@reviewerf{#1}}
+\newcommand\reviewerg[1]{\def\hhut@value@reviewerg{#1}}
 \newcommand\nlcdate[1]{\def\hhut@value@nlcdate{#1}}
 \newcommand\nlclocate[1]{\def\hhut@value@nlclocate{#1}}
+\newcommand\vtitle[1]{\def\hhut@value@vtitle{#1}}
 \newcommand\institute[1]{\def\hhut@value@institute{#1}}
 \newcommand\zhtitle[1]{\def\hhut@value@zhtitle{#1}}
 \newcommand\zhsubtitle[1]{\def\hhut@value@zhsubtitle{#1}}
-\newcommand\entitlea[1]{\def\hhut@value@entitlea{#1}}
-\newcommand\entitleb[1]{\def\hhut@value@entitleb{#1}}
+\newcommand\entitle[1]{\def\hhut@value@entitle{#1}}
 \newcommand\ensubtitle[1]{\def\hhut@value@ensubtitle{#1}}
 \newcommand\thesislang[1]{\def\hhut@value@thesislang{#1}}
 \newcommand\abstractlang[1]{\def\hhut@value@abstractlang{#1}}
@@ -1707,13 +1738,13 @@
     {\songti \zihao{4}   
         \vskip 10pt
         \makebox[40pt][r]{\hhut@label@classification}
-        \hhutunderline[90pt]{\hhut@value@classification}
+        \hhutunderline[150pt]{\hhut@value@classification}
         \hfill
         \makebox[40pt][r]{\hhut@label@studentnumber}
         \hhutunderline[90pt]{\hhut@value@studentnumber}
         \vskip 10pt
         \makebox[40pt][r]{\hhut@label@udc}
-        \hhutunderline[90pt]{\hhut@value@udc}
+        \hhutunderline[150pt]{\hhut@value@udc}
         \hfill
         \makebox[40pt][r]{\hhut@label@securitylevel}
         \hhutunderline[90pt]{\hhut@value@securitylevel}
@@ -1726,41 +1757,57 @@
         {\ifhhut@doctor \songti \zihao{2} \hhut@label@thesistitle@doctor
         \else \ifhhut@academicmaster \songti \zihao{2} \hhut@label@thesistitle@academic
             \else \ifhhut@professionalmaster \songti \zihao{2} \hhut@label@thesistitle@professional
-                \else \songti \zihao{2} \hhut@label@thesistitle@bachelor \fi\fi\fi}
+                \else \ifhhut@nonfulltimemaster \songti \zihao{2} \hhut@label@thesistitle@nonfulltime
+                    \else \songti \zihao{2} \hhut@label@thesistitle@bachelor \fi\fi\fi\fi}% 学位论文
         \begin{spacing}{2.5}
         {\heiti \zihao{1}
         \hhut@value@title
         }
         \end{spacing}
         \vskip 30pt
-        {\fangsong \zihao{4} \hhut@value@author}
+        {\songti \zihao{4} \hhut@value@author}
         \vskip 30pt
     \end{center}
     \begin{spacing}{2.0}
     {\songti \zihao{4}
         \noindent
         {\ifhhut@professionalmaster \hhut@label@professional@tutora
-            \else \hhut@label@tutor \fi}
+            \else \ifhhut@nonfulltimemaster \hhut@label@professional@tutora
+                \else \hhut@label@tutor \fi\fi}%
         \hhutunderline[355pt]{\hhut@value@tutorinfoa}\\
         {\ifhhut@professionalmaster \hhut@label@professional@tutorb \hhutunderline[355pt]{\hhut@value@tutorinfob}
-            \else \rightline{\hhutunderline[355pt]{\hhut@value@tutorinfob}}\fi}\\
-        \noindent\hhut@label@degree
-        \hhutunderline[120pt]{\hhut@value@degree}
+            \else \ifhhut@nonfulltimemaster \hhut@label@professional@tutorb \hhutunderline[355pt]{\hhut@value@tutorinfob}
+                \else \rightline{\hhutunderline[355pt]{\hhut@value@tutorinfob}}\fi\fi}\\
+        \noindent\hhut@label@degree%
+        \hhutunderline[120pt]{\hhut@value@degree}%
         \hfill
-        {\ifhhut@professionalmaster \hhut@label@major@professional
-        \else \hhut@label@major@academic\fi}
-        \hhutunderline[150pt]{\hhut@value@major}\\
-        \noindent\hhut@label@submitdate
+        \hhut@label@major%
+        \hhutunderline[150pt]{\hhut@value@major}\\%
+        \noindent\hhut@label@submitdate%
         \hhutunderline[120pt]{\hhut@value@submitdate}
         \hfill
-        \hhut@label@defenddate
+        \hhut@label@defenddate%
         \hhutunderline[120pt]{\hhut@value@defenddate}\\
-        \noindent\hhut@label@awarded
+        \noindent\hhut@label@awarded%
         \hhutunderline[313pt]{\hhut@value@awarded}\\
-        \hhut@label@chairman
-        \noindent\hhutunderline[343pt]{\hhut@value@chairman}\\
-        \noindent\hhut@label@reviewer
-        \hhutunderline[343pt]{\hhut@value@reviewer}
+        {\ifhhut@doctor \noindent\hhut@label@chairman%
+        \hhutunderline[54pt]{\hhut@value@chairman}
+        \hhut@label@reviewer%
+        \hhutunderline[54pt]{\hhut@value@reviewera}\hhut@label@comma
+        \hhutunderline[54pt]{\hhut@value@reviewerb}\hhut@label@comma
+        \hhutunderline[54pt]{\hhut@value@reviewerc}\hhut@label@comma\\
+        \noindent\hhutunderline[54pt]{\hhut@value@reviewerd}\hhut@label@comma
+        \hhutunderline[54pt]{\hhut@value@reviewere}\hhut@label@comma
+        \hhutunderline[54pt]{\hhut@value@reviewerf}\hhut@label@comma
+        \hhutunderline[54pt]{\hhut@value@reviewerg}
+            \else \noindent\hhut@label@chairman%
+            \hhutunderline[54pt]{\hhut@value@chairman}
+            \hhut@label@reviewer%
+            \hhutunderline[54pt]{\hhut@value@reviewera}\hhut@label@comma
+            \hhutunderline[545pt]{\hhut@value@reviewerb}\hhut@label@comma
+            \hhutunderline[54pt]{\hhut@value@reviewerc}\hhut@label@comma\\
+            \noindent\hhutunderline[54pt]{\hhut@value@reviewerd}\hhut@label@comma
+            \hhutunderline[54pt]{\hhut@value@reviewere} \fi}%
     }
     \end{spacing}
     \begin{center}
@@ -1776,91 +1823,106 @@
 }
 %    \end{macrocode}
 %
+% 定义\cs{makeverticaltitle}命令用于生成\hhuthesis{}论文中缝（书脊）页。
+%    \begin{macrocode}
+\newcommand\makeverticaltitle{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \pdfbookmark[0]{\hhut@label@spine}{spine}
+   {\vskip 5cm
+   \begin{flushleft}
+    \setstretch{1.1}
+    \begin{minipage}{1em}
+        {\songti\zihao{4}\hhut@value@vtitle}
+        \vskip 2cm
+        {\songti\zihao{4}\hhut@value@author}
+        \vskip 2cm
+        {\songti\zihao{4}\hhut@value@institute}
+    \end{minipage}
+   \end{flushleft}
+   }
+    \clearpage
+    \if@twoside
+        \thispagestyle{empty}
+        \cleardoublepage
+    \fi
+}
+%    \end{macrocode}
+%
 % 定义\cs{makeinfo} 命令用于生成\hhuthesis{} 论文中文信息封面。
 %    \begin{macrocode}
-\newcommand\makeinfo[1]
+\newcommand\makeinfo[1]%
 {
     \newpage
     \cleardoublepage
     \thispagestyle{empty}
     \pdfbookmark[0]{\hhut@label@cover}{cover}
+    \begin{spacing}{3.0}
     {\songti \zihao{4}
-    \noindent\hhut@label@cover@classification
-    \hhutunderline[60pt]{\hhut@value@classification}
-    \hspace{24pt}
-    \hhut@label@cover@udc
-    \hhutunderline[60pt]{\hhut@value@udc}
-    \hspace{24pt}
-    \hhut@label@cover@securitylevel
-    \hhutunderline[72pt]{\hhut@value@securitylevel}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@author
-    \hhutunderline[66pt]{\hhut@value@author}
-    \hspace{18pt}
-    \hhut@label@cover@studentnumber
-    \hhutunderline[96pt]{\hhut@value@studentnumber}
-    \hspace{18pt}
-    \hhut@label@cover@institute
+    \noindent\hhut@label@cover@classification%
+    \hhutunderline[69pt]{\hhut@value@classification}%
+    \hspace{6pt}
+    \hhut@label@cover@udc%
+    \hhutunderline[69pt]{\hhut@value@udc}%
+    \hspace{6pt}
+    \hhut@label@cover@securitylevel%
+    \hhutunderline[90pt]{\hhut@value@securitylevel}\\
+    \noindent\hhut@label@cover@author%
+    \hhutunderline[84pt]{\hhut@value@author}%
+    \hspace{6pt}
+    \hhut@label@cover@studentnumber%
+    \hhutunderline[102pt]{\hhut@value@studentnumber}%
+    \hspace{6pt}
+    \hhut@label@cover@institute%
     \hhutunderline[96pt]{\hhut@value@institute}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@zhtitle
+    \noindent\hhut@label@cover@zhtitle%
     \hhutunderline[361pt]{\hhut@value@zhtitle}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@zhsubtitle
+    \noindent\hhut@label@cover@zhsubtitle%
     \hhutunderline[345pt]{\hhut@value@zhsubtitle}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@entitle
-    \hhutunderline[360pt]{\hhut@value@entitlea}\\
-    \rightline{\hhutunderline[360pt]{\hhut@value@entitleb}}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@ensubtitle
+    \noindent\hhut@label@cover@entitle%
+    \uline{\hhut@value@entitle}\\
+    \noindent\hhut@label@cover@ensubtitle%
     \hhutunderline[345pt]{\hhut@value@ensubtitle}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@thesislang
-    \hhutunderline[40pt]{\hhut@value@thesislang}
+    \noindent\hhut@label@cover@thesislang%
+    \hhutunderline[40pt]{\hhut@value@thesislang}%
     \hhut@label@cover@abstractlang%
-    \hhutunderline[70pt]{\hhut@value@abstractlang}
-    \hhut@label@cover@thesispages
-    \hhutunderline[30pt]{\hhut@value@thesispages}
-    \hhut@label@cover@numofwords
-    \hhutunderline[42pt]{\hhut@value@numofwords}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@thesiskeywords
+    \hhutunderline[60pt]{\hhut@value@abstractlang}%
+    \hhut@label@cover@thesispages%
+    \hhutunderline[30pt]{\hhut@value@thesispages}%
+    \hhut@label@cover@numofwords%
+    \hhutunderline[30pt]{\hhut@value@numofwords}
+    \hhut@label@cover@unitofwords\\
+    \noindent\hhut@label@cover@thesiskeywords%
     \hhutunderline[373pt]{\hhut@value@thesiskeywords}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@degree
-    \hhutunderline[114pt]{\hhut@value@degree}
+    \noindent\hhut@label@cover@degree%
+    \hhutunderline[90pt]{\hhut@value@degree}%
     \hfill
-    {\ifhhut@professionalmaster \hhut@label@cover@major@professional
-        \else \hhut@label@cover@major@academic\fi}
-    \hhutunderline[144pt]{\hhut@value@major}\\
-    \vskip 5pt
-    \noindent\hhut@label@cover@researchfield
+    \hhut@label@cover@major%
+    \hhutunderline[210pt]{\hhut@value@major}\\
+    \noindent\hhut@label@cover@researchfield%
     \hhutunderline[387pt]{\hhut@value@researchfield}\\
-    \vskip 5pt
     {\ifhhut@professionalmaster
-            \noindent\hhut@label@cover@professional@tutora
-            \hhutunderline[120pt]{\hhut@value@tutora}
-            \hfill
-            \hhut@label@cover@tutorinstitute
-            \hhutunderline[170pt]{\hhut@value@tutorainstitute}\\
-            \vskip 5pt
-            \noindent\hhut@label@cover@professional@tutorb
-            \hhutunderline[120pt]{\hhut@value@tutorb}
-            \hfill
-            \hhut@label@cover@tutorinstitute
-            \hhutunderline[170pt]{\hhut@value@tutorbinstitute}\\            
-        \else
-            \noindent\hhut@label@cover@tutor
-            \hhutunderline[120pt]{\hhut@value@tutor}
-            \hfill
-            \hhut@label@cover@tutorinstitute
-            \hhutunderline[170pt]{\hhut@value@tutorinstitute}\\
-        \fi}
-    \vskip 5pt
-    \noindent\hhut@label@cover@defenddate
+        \noindent\hhut@label@cover@professional@tutora%
+        \hhutunderline[90pt]{\hhut@value@tutora}%
+        \hfill
+        \hhut@label@cover@professional@tutorinstitute%
+        \hhutunderline[210pt]{\hhut@value@tutorainstitute}\\
+        \noindent\hhut@label@cover@professional@tutorb%
+        \hhutunderline[90pt]{\hhut@value@tutorb}%
+        \hfill
+        \hhut@label@cover@professional@tutorinstitute%
+        \hhutunderline[210pt]{\hhut@value@tutorbinstitute}\\            
+    \else
+        \noindent\hhut@label@cover@tutor%
+        \hhutunderline[90pt]{\hhut@value@tutor}%
+        \hfill
+        \hhut@label@cover@tutorinstitute%
+        \hhutunderline[210pt]{\hhut@value@tutorinstitute}\\
+    \fi}
+    \noindent\hhut@label@cover@defenddate%
     \hhutunderline[357pt]{\hhut@value@defenddate}
     }
+    \end{spacing}
     \clearpage
     \if@twoside
         \thispagestyle{empty}
@@ -1883,7 +1945,7 @@
 %
 % 定义\cs{makeeninfo} 命令用于生成\hhuthesis{} 论文英文信息封面。
 %    \begin{macrocode}
-\newcommand\makeeninfo[1]{
+\newcommand\makeeninfo[1]{%
     \cleardoublepage
     \thispagestyle{empty}
     \pdfbookmark[0]{\hhut@label@encover}{encover}
@@ -1892,18 +1954,17 @@
         \begin{spacing}{2.0}
             {\zihao{2} \textbf{\hhut@value@englishtitle}}
         \vskip 60pt
-        {\rmfamily\zihao{-3}\hhut@label@enstatement}
+        {\rmfamily\zihao{4}\hhut@label@enstatement}
         \vskip 60pt
-        {\normalfont\rmfamily\zihao{4}\hhut@label@enby}
-        \vskip 5pt
-        {\rmfamily \zihao{4} \textbf{\hhut@value@englishauthor}}
-        \vskip 5pt
+        {\normalfont\rmfamily\zihao{4}\hhut@label@enby}\\
+        {\rmfamily \zihao{4} \textbf{\hhut@value@englishauthor}}\\
         {\rmfamily \zihao{4} \textbf{(\hhut@value@englishdepartment)}}
-        \vskip 15pt
+        \vskip 60pt
         {\normalfont\rmfamily\zihao{4}\hhut@label@entutor
         \rmfamily \zihao{4} \textbf{\hhut@value@entutor}}
         \vskip 60pt
-        {\rmfamily \zihao{4} \textbf{\hhut@value@englishdate,\hspace{1em}\hhut@value@enlocate}}
+        {\rmfamily \zihao{4} \textbf{\hhut@value@enlocate}}\\
+        {\noindent \rmfamily \zihao{4} \textbf{\hhut@value@englishdate}}        
         \end{spacing}
     \end{center}
     \normalfont
@@ -1918,38 +1979,32 @@
 % \subsection{学位论文原创性说明和授权说明}
 % 定义\cs{makedeclare} 命令用于生成\hhuthesis{} 论文原创性说明和使用授权说明。
 %    \begin{macrocode}
-\newcommand\makedeclare{
+\newcommand\makedeclare{%
     \cleardoublepage
     \pdfbookmark[0]{\hhut@label@declareoriginal}{declareoriginal}
     \thispagestyle{empty}
     \vskip 40pt
-    \begin{flushleft}
-        {\zihao{4} \textbf{\hhut@label@original}}
-    \end{flushleft}
-    \vskip 10pt
     \begin{spacing}{2.0}
-        {\zihao{4} \textbf{\hhut@label@originalcontent}}
+        { \zihao{4} \rmfamily \bfseries
+        \hhut@label@original \par
+        \vskip 10pt
+        \hhut@label@originalcontent \par
+        \vskip 50pt
+        \hhut@label@authorsign%
+        \hhutunderline[120pt]{} %
+        \hfill
+        \hhut@label@originaldate \par
+        \vskip 60pt
+        \hhut@label@authorization \par
+        \vskip 10pt
+        \hhut@label@authorizationcontent \par
+        \vskip 50pt
+        \hhut@label@authorsign%
+        \hhutunderline[120pt]{} %
+        \hfill
+        \hhut@label@originaldate
+    }
     \end{spacing}
-    \vskip 50pt
-    {\noindent\zihao{4}\textbf{\hhut@label@authorsign}}
-    \hhutunderline[100pt]{} 
-    \hfill
-    {\zihao{4}\textbf{\hhut@label@originaldate}}
-    \hhutunderline[100pt]{}
-    \vskip 80pt
-    \begin{flushleft}
-        {\zihao{4} \textbf{\hhut@label@authorization}}
-    \end{flushleft}
-    \vskip 10pt
-    \begin{spacing}{2.0}
-        {\zihao{4} \textbf{\hhut@label@authorizationcontent}}
-    \end{spacing}
-    \vskip 50pt
-    {\noindent\zihao{4}\textbf{\hhut@label@authorsign}}
-    \hhutunderline[100pt]{} 
-    \hfill
-    {\zihao{4}\textbf{\hhut@label@originaldate}}
-    \hhutunderline[100pt]{}
     \clearpage
     \if@twoside
         \thispagestyle{empty}
@@ -2041,7 +2096,7 @@
            {\settowidth\labelwidth{\@biblabel{#1}}
             \leftmargin\labelwidth
             \advance\leftmargin\labelsep
-            \setlength{\parsep}{1mm}
+            \setlength{\parsep}{-0.5mm}
             \setlength{\labelsep}{0.5em}
             \setlength{\itemsep}{0.05pc}
             \setlength{\listparindent}{0in}
@@ -2103,13 +2158,6 @@
     \chapter{\hhut@label@resume}
     \songti    
 }{}
-%    \end{macrocode}
-%
-% 个人简历部分。每条信息一个段落，不需要特别处理。
-%    \begin{macrocode}
-\newcommand{\resumeitem}[1]{
-    \vspace{6bp}{\zihao{4} \heiti \leftline{#1}}\par\vspace{6bp}
-}
 %    \end{macrocode}
 %
 % 学术论文、科研项目、所获荣誉用\cs{researchitem}开启
