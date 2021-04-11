@@ -1,14 +1,14 @@
 %%
 %% This is file 'hhuthesis-example.tex'
 %%
-%% Copyright(C) 2020, Wenhan Cao.
+%% Copyright(C) 2020-2021, Wenhan Cao.
 %% College of Water Conservancy and Hydropower Engineering, Hohai University.
 %%
 %% Home Page of the Project:
 %% http://github.com/caowenhan/hhuthesis
 %%
-%% Version:v1.0.0
-%% Last update: July 19th,2020.
+%% Version:v2.0.0
+%% Last update: April 7th,2021.
 %% It may be distribute and / or modified under the conditions of the LaTeX Project
 %% Public License, either version 1.3c of this license or (at your option) any
 %% later version. The latest version of this license is in
@@ -19,24 +19,14 @@
 %% 2008/05/04 or later.
 %%
 
-%% 默认双面打印 twoside、博士论文模板 doctor
+%% 默认博士论文模板 doctor
 
-\documentclass[twoside, doctor]{hhuthesis}
+\documentclass[doctor]{hhuthesis}
 
-%% 模板选项：学士论文bachelor；学术型硕士论文academicmaster；专业型硕士论文professionalmaster；博士论文doctor
-%% 模板选项：单面打印oneside；双面打印twoside
+%% 模板选项：本科毕业论文bachelor；学术型硕士论文academicmaster；专业学位硕士论文professionalmaster；非全日制专业学位论文nonfulltimemaster；博士论文doctor
 
 %% 更改数学字体设置，Latin Modern Math 默认的有点细，可选用下列宏包
 % \usepackage[bold-style=ISO]{unicode-math}
-
-%% 设置双线页眉，使用单线页眉可注释
-\makeatletter
-\def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
-		\hrule\@height 1.0pt \@width\headwidth\vskip1pt % 上面线为1pt粗
-		\hrule\@height 0.5pt \@width\headwidth          % 下面线为0.5pt粗
-		\vskip-2\headrulewidth\vskip-1pt}%
-	\vspace{6mm}}
-\makeatother
 
 \begin{document}
 
@@ -45,43 +35,50 @@
 %%
 
 %% 国家图书馆封面和中文信息封面
-\studentnumber{<学生学号>}
-\classification{<分类号>}
-\securitylevel{公开}
-\udc{<UDC号>}
-\title{寒冷地区渗水病害影响下混凝土坝\\服役性态多尺度分析方法}
-\author{作者姓名}
+\studentnumber{1209800072}
+\classification{TV14}
+\securitylevel{无}
+\udc{627}
+\title{河网地区水力水质特性的\\组合单元解法及反问题的研究}
+\vtitle{河网地区水力水质特性的组合单元解法及反问题的研究}
+\author{韩中国}
 
 % 专业型硕士\tutorinfoa填写学校指导老师信息，\tutorinfob填写基地指导老师信息
 % 其余用户\tutorinfoa填写指导老师姓名&职称，\tutorinfob填写指导老师单位&地址
-\tutorinfoa{导师姓名\hspace{3em}教授~~博导}
-\tutorinfob{学院名称~~南京市西康路1号}
+\tutorinfoa{张长江\hspace{3em}教授\hspace{3em}博导}
+\tutorinfob{河海大学水利水电学院}
 
 \degree{工学博士}
-\major{<专业名称>}
-\submitdate{2018年7月}
-\defenddate{2018年9月7日}
-\awarded{河海大学~~~~2018年9月26日}
-\chairman{主席A}
-\reviewer{专家A、专家B、专家C、专家D、专家E、专家F}
-\nlcdate{2018年9月}
-\nlclocate{中国 $\cdot$ 南京}
+\major{水力学及河流动力学}
+\submitdate{2016年7月6日}
+\defenddate{2016年9月30日}
+\awarded{河~海~大~学\hspace{3em}2016年12月30日}
+\chairman{王继承}
+%%博士答辩专家为7人，硕士答辩专家为5人，\reviewerf{}和\reviewerg{}可以省略不填。
+\reviewera{王继承}
+\reviewerb{李生柱}
+\reviewerc{徐鹏飞}
+\reviewerd{陈\hspace{1em}诚}
+\reviewere{吴树人}
+\reviewerf{姜大文}
+\reviewerg{蒋小为}
+\nlcdate{2016年12月}
+\nlclocate{中~~国~~$\cdot$~~南~~京}
 \institute{河海大学}
-\zhtitle{寒冷地区渗水病害影响下混凝土坝服役性态多尺度分析方法}
+\zhtitle{河网地区水力水质特性的组合单元解法及反问题的研究}
 \zhsubtitle{无}
-\entitlea{Multiscale analysis of concrete dam service ability under}
-\entitleb{ the influence of water-seepage diseases in cold region}
+\entitle{\hfill Combined Cells Model of Hydraulics and Water Quality of \\River Networks and Its Reverse Problem}
 \ensubtitle{None}
 \thesislang{汉语}
 \abstractlang{汉、英}
-\thesispages{145}
-\numofwords{8.5万}
-\thesiskeywords{寒冷地区、混凝土坝、服役性态、渗水病害、多尺度分析}
-\researchfield{<具体研究方向>}
+\thesispages{198}
+\numofwords{11}
+\thesiskeywords{河网、力特征、水质特性、污染面、联合解法}
+\researchfield{工程水力学及环境水力学}
 
-%% 博士、学术型硕士、本科生填写，专业型硕士不用填写
-\tutor{<导师姓名>}	
-\tutorinstitute{<导师单位>}
+%% 博士、学术型硕士填写，专业型硕士不用填写
+\tutor{张长江~教授}	
+\tutorinstitute{河海大学水利水电学院}
 
 %% 专业型硕士填写，其余不用填写
 \tutora{}
@@ -90,17 +87,20 @@
 \tutorbinstitute{}
 
 %% 英文信息封面
-\englishtitle{Multiscale analysis of concrete dam service ability under the influence of water-seepage diseases in cold region}
-\englishauthor{author's name}
-\entutor{~~supervisor's name}
+\englishtitle{Combined Cells Model of Hydraulics and Water Quality of River Networks and Its Reverse Problem}
+\englishauthor{Han Zhongguo}
+\entutor{~~Zhang Changjiang}
 \eninstitute{Hohai University}
-\englishdepartment{author's department}
-\englishdate{September, 2018}
+\englishdepartment{College of Water Conservancy and Hydropower Engineering}
+\englishdate{September, 2016}
 \enlocate{Nanjing,  P.R.China}
 \englishdegree{Doctor of Engineering}
 
 %% 制作国家图书馆封面
 \makenlctitle
+
+%% 制作书脊
+\makeverticaltitle
 
 %% 制作中文信息封面
 \makeinfo
@@ -116,10 +116,10 @@
 %%
 \frontmatter
 
-%%
+%% 前言，硕士论文不需要可删除
 \input{chapters/preface}
 
-%%
+%% 摘要
 \input{chapters/abstract}
 
 %% 符号对照表，可选，如不用可注释掉
@@ -128,7 +128,7 @@
 %% 加入目录
 \tableofcontents
 
-%% 加入图、表索引(同时取消图表索引中章之间的垂直间隔)
+%% 加入图、表索引(同时取消图表索引中章之间的垂直间隔，不需要可以注释)
 \let\origaddvspace\addvspace
 \renewcommand{\addvspace}[1]{}
 \listoffigures
@@ -142,7 +142,7 @@
 
 %% 各章正文内容
 \input{chapters/chapter1}
-% \input{chapters/chapter2}
+\input{chapters/chapter2}
 % \input{chapters/chapter3}
 % \input{chapters/chapter4}
 % \input{chapters/chapter5}
@@ -151,8 +151,8 @@
 %% 参考文献样式设定
 \bibliographystyle{hhuthesis-numeric}		% 顺序编码式
 %% 参考文献，10号字，使用 BibTeX，包含参考文献文件.bib
-% \bibliography{reference/chap1,reference/chap2} %
-\bibliography{reference/chap1}
+\bibliography{reference/chap1,reference/chap2} %
+%\bibliography{reference/chap1}
 
 %%
 %% 后置部分
@@ -164,7 +164,7 @@
 %% 致谢
 \input{chapters/acknowledgement}
 
-%% 作者简介
+%% 附录
 \input{chapters/resume}
 
 \end{document}
