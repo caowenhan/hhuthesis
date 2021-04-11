@@ -6,7 +6,7 @@
 
 # hhuthesis
 
-**Latest Version: `V1.0.0`**  
+**Latest Version: `V2.0.0`**  
 
 Scroll down for the English version of README.
 
@@ -44,7 +44,7 @@ Scroll down for the English version of README.
 ### 功能特色
 
 - 此模板用于生成符合河海大学学位论文排版要求和相应的国家规范、行业标准的学位论文；
-- 可排版本科毕业论文、硕士学位论文、博士学位论文；
+- 可排版博士学位论文、硕士学位论文、（非）全日制专业学位硕士论文、本科毕业论文；
 - 使用XeLaTeX作为排版引擎，论文源码需要使用UTF-8编码；
 - 自动生成国家图书馆封面、中文信息封面、英文信息封面、学位论文原创性声明&论文出版授权书、前言、中文摘要页、英文摘要页等必需页面；
 
@@ -72,12 +72,12 @@ Scroll down for the English version of README.
 - 学位论文编写规则(GB/T 7713.1-2006)
 - 信息与文献参考文献著录规则(GB/T 7714-2015)
 - 科技文献的章节编号方法(CY/T 35-2001)
-- 河海大学博士(硕士)学位论文编写格式规定
+- 河海大学博士(硕士)学位论文编写格式规定（2020.09.29发布）
 
 ### 重要提醒
 
 1. 本模板未经学校相关部门审核及授权，使用前请务必斟酌。
-2. 本模板仍处于开发更新中，在撰写论文的过程中，请确保为最新版本。
+2. 本模板处于不定期更新中，在撰写论文的过程中，请确保为最新版本。
 3. 任何由于使用本模板而引起的论文格式审查问题均与本模板作者无关。
 
 ### 贡献
@@ -100,7 +100,7 @@ Scroll down for the English version of README.
 
 Aiming at the dissertations nonstandard format problems such as chart format, writing format and formula format, a simple and easy-to-use LaTeX template for Hohai dissertations is provided. The template strictly follows the requirements of the academic committee of Hohai University on the format of the dissertations and the corresponding national standards and specifications.
 
-**This templateissubject  to frequent changes. Please make sure you have read the usage documentation and example code completely and carefully before using.**
+**At present, the template trial upgrade frequently. Please make sure you have read the usage documentation and example code completely and carefully before using.**
 
 ### Project Homepage
 
@@ -122,7 +122,7 @@ Refer to the relevant section of the [User Manual][manual] for detailed instruci
 
 ### Features
 - `hhuthesis` can be used to produce dissertations in accordance with the typesetting requirements of Hohai University and corresponding national norms and industry standards.
-- `hhuthesis` can be used to complie bachelor's thesis, master's thesis, doctor's thesis.
+- `hhuthesis` can be used to complie doctor's thesis, master's thesis, (non-)full-time professional master's thesis ，bachelor‘s thesis.
 - `hhuthesis` is supported by XeLaTeX engines and only allows UTF-8 encoding.
 - `hhuthesis` automatically generate the National Library cover, Chinese Information cover, English information cover, thesis origanality statement & thesis publishing authorization, preface, Chinese abstract, English abstract and other necessary pages.
 
@@ -150,11 +150,11 @@ Refer to the relevant section of the [User Manual][manual] for detailed instruci
 - Presentation of theses and dissertations[GB/T 7713.1-2006]
 - Information and documention—Rules for bibliographic references and citations to information resources[GB/T 7714-2015]
 - Numbering of divisions and subdivisions in scientific and technical documents[CY/T 35-2001]
-- Rules of Hohai University for the format of doctoral & master's dissertations
+- Rules of Hohai University for the format of doctoral & master's dissertations[Released on Sep. 29, 2020]
 
 ### Warnings
 1. `hhuthesis` has NOT been reviewed and authorized by the relevant department of the institute. Please consider carefully before using it.
-2. `hhuthesis` is still being updated. As you use it, make sure it is the latest version.
+2. `hhuthesis` is still being updated irregularly. As you use it, make sure it is the latest version.
 3. Any problem of format censorship casused by the use of `hhuthsis` will NOT be concerned by the template author.
 
 ### Contributing
@@ -172,3 +172,4 @@ This work may be distributed and/or modified under the conditions of the [LaTeX 
 ***
 
 Copyright (C) 2020-2021 by Wenhan Cao.
+
