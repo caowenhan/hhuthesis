@@ -118,7 +118,7 @@
 	{\rmfamily \zihao{4} \textbf{\hhut@value@englishdegree}}\\
 }
 \def\hhut@label@enby{By}
-\def\hhut@label@entutor{Dissertation Supervisor:~Professor}
+\def\hhut@label@entutor{Dissertation Supervisor:~}
 
 %% 原创性声明内容
 \def\hhut@label@declareoriginal{原创性声明}
